@@ -99,9 +99,9 @@ for i in range(first,last+1):
     for j in range(ndim):
         ax = axes[j, j]
         ax.axvline(params[0][j], color="g")
-        ax.axvline(mean[j], color="r")
-        ax.axvline(median[j], color="b")
-        ax.axvline(mode[j], color="y")
+        # ax.axvline(mean[j], color="r")
+        # ax.axvline(median[j], color="b")
+        # ax.axvline(mode[j], color="y")
         
     # Loop over the histograms
     for yi in range(ndim):
@@ -110,15 +110,15 @@ for i in range(first,last+1):
             ax.axvline(params[0][xi], color="g")
             ax.axhline(params[0][yi], color="g")
             ax.plot(params[0][xi], params[0][yi], "sg")
-            ax.axvline(mean[xi], color="r")
-            ax.axhline(mean[yi], color="r")
-            ax.plot(mean[xi], mean[yi], "sr")
-            ax.axvline(median[xi], color="b")
-            ax.axhline(median[yi], color="b")
-            ax.plot(median[xi], median[yi], "sb")
-            ax.axvline(mode[xi], color="y")
-            ax.axhline(mode[yi], color="y")
-            ax.plot(mode[xi], mode[yi], "sy")
+            # ax.axvline(mean[xi], color="r")
+            # ax.axhline(mean[yi], color="r")
+            # ax.plot(mean[xi], mean[yi], "sr")
+            # ax.axvline(median[xi], color="b")
+            # ax.axhline(median[yi], color="b")
+            # ax.plot(median[xi], median[yi], "sb")
+            # ax.axvline(mode[xi], color="y")
+            # ax.axhline(mode[yi], color="y")
+            # ax.plot(mode[xi], mode[yi], "sy")
 
-    loc ="test"+str(i)+"_tn.png"
+    loc ="test"+str(i)+"_tnd.png"
     plt.savefig(loc)
