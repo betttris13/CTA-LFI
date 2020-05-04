@@ -47,8 +47,8 @@ test['mc_az'][test['mc_az']<np.pi] = test['mc_az'][test['mc_az']<np.pi] + 2*np.p
 df['mc_energy'] = np.log10(df['mc_energy'])
 test['mc_energy'] = np.log10(test['mc_energy'])
 
-sim_compressed_data = np.array(df[features])[:1050952]
-sim_params = np.array(df[theta]).astype(None)[:1050952]
+sim_compressed_data = np.array(df[features])
+sim_params = np.array(df[theta]).astype(None)
 
 i = 0
 compressed_data = np.array(test[features])[i]
